@@ -1,0 +1,18 @@
+/* utils */
+@use 'variables' as *;
+
+@mixin breakpoint($breakpoint) {
+	$my-map : map-get($breakpoints, $breakpoint);
+	// If the key exists in the map
+  @if $my-map {
+    // Prints a media query based on the value
+    @media (#{$my-map}) {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @error 'Opps, seems like the breakpoint #{$breakpoint} is not defined.';
+  }
+}

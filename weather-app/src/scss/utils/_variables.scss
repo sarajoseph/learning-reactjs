@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
+/* breakpoints */
+$breakpoints: (
+	'xs': 'max-width: 575px',
+	'sm': 'max-width: 767px',
+	'md': 'max-width: 991px',
+	'lg': 'max-width: 1199px',
+	'xl': 'max-width: 1399px',
+	'xxl': 'min-width: 1400px',
+);
+
+/* fonts */
+$font-poppins: 'Poppins', sans-serif;
+
+/* colors */
+	
